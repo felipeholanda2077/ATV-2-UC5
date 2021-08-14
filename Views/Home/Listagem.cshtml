@@ -1,0 +1,26 @@
+@using ATIVIDADE_1
+@model List<ItemPedido>
+
+    <h2>Listagem de Pedidos</h2>
+    <table border="2">
+      <thead>
+       <tr>
+           <th>Descrição</th>
+       
+       
+       </tr>
+       </thead>
+
+       <tbody>
+           @foreach (ItemPedido item in Model)
+           {
+               
+               <tr>
+                   <td>@item.descricao</td>
+               </tr>
+           }
+       </tbody>
+    </table>
+
+    <p>Total dos pedidos é: @Pedido.Total()</p>
+    
