@@ -3,11 +3,15 @@ using System.Collections.Generic;
 
 namespace ATIVIDADE_1
 {
-    public class Pedido
+    public class NewBaseType
+    {
+        internal void AddPedido() => throw new NotImplementedException();
+    }
+
+    public class Pedido : NewBaseType
     {
         private List<ItemPedido> listaItens;
 
-        public object AddPedido { get; internal set; }
 
         public Pedido()
         {
@@ -34,5 +38,18 @@ namespace ATIVIDADE_1
         {
             throw new NotImplementedException();
         }
+
+        public double Total()
+        {
+            double total = 0;
+            for(int i = 0; i < listaItens.Count; i++)
+            {
+                total += (listaItens[i].valor_unitario * listaItens[i].quantidade);
+            }
+
+            return total;
+        }
+
+        
     }
 }

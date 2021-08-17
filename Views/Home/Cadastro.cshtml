@@ -1,18 +1,21 @@
+@using ATV2_UC5.Models
+@using ATIVIDADE_1
+@using System
 @model ItemPedido
 
 <form method="POST">
 
 <p>
-    <label asp-for="descricao">Descrição</label>
-    <input asp-for="descricao">
+    <label asp-for="descrição">Descrição</label>
+    <input asp-for="descrição">
 </p>
 <p>
-    <label asp-for="descricao">Descrição</label>
-    <input asp-for="descricao">
+    <label asp-for="valor_unitario">Valor Unitario</label>
+    <input asp-for="valor_unitario">
 </p>
 <p>
-    <label asp-for="descricao">Descrição</label>
-    <input asp-for="descricao">
+    <label asp-for="quantidade">Quantidade</label>
+    <input asp-for="quantidade">
 </p>
 
 <input type="submit" value="Cadastrar Pedido">

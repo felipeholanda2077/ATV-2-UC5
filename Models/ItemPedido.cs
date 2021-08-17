@@ -10,5 +10,7 @@ namespace ATIVIDADE_1
         public double valor_unitario;
 
         public int quantidade;
+
+          
     }
 }

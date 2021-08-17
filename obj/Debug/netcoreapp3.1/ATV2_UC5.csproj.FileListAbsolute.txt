@@ -35,3 +35,5 @@ C:\Users\felip\OneDrive\Documentos\ATV2_UC5\obj\Debug\netcoreapp3.1\ATV2_UC5.dll
 C:\Users\felip\OneDrive\Documentos\ATV2_UC5\obj\Debug\netcoreapp3.1\ATV2_UC5.pdb
 C:\Users\felip\OneDrive\Documentos\ATV2_UC5\obj\Debug\netcoreapp3.1\ATV2_UC5.genruntimeconfig.cache
 C:\Users\felip\OneDrive\Documentos\ATV2_UC5\obj\Debug\netcoreapp3.1\ATV2_UC5.csproj.CopyComplete
+C:\Users\felip\OneDrive\Documentos\ATV2_UC5\obj\Debug\netcoreapp3.1\Razor\Views\Home\Cadastro.cshtml.g.cs
+C:\Users\felip\OneDrive\Documentos\ATV2_UC5\obj\Debug\netcoreapp3.1\Razor\Views\Home\Listagem.cshtml.g.cs

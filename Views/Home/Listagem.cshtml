@@ -1,3 +1,8 @@
+@using System.Collections.Generic
+@using System.Diagnostics
+@using System.Linq
+@using System.Threading.Tasks
+@using System
 @using ATIVIDADE_1
 @model List<ItemPedido>
 
@@ -16,11 +21,11 @@
            {
                
                <tr>
-                   <td>@item.descricao</td>
+                   <td>@item.descrição</td>
                </tr>
            }
        </tbody>
     </table>
 
-    <p>Total dos pedidos é: @Pedido.Total()</p>
+    <p>Total dos pedidos é: @Model.Total()</p>
     
