@@ -8,13 +8,14 @@
 
     <h2>Listagem de Pedidos</h2>
     <table border="2">
-      <thead>
+    <thead>
        <tr>
            <th>Descrição</th>
-       
-       
-       </tr>
-       </thead>
+           <th>Quantidade</th>
+           <th>Valor_unitario</th>
+
+        </tr>
+    </thead>
 
        <tbody>
            @foreach (ItemPedido item in Model)
@@ -22,10 +23,22 @@
                
                <tr>
                    <td>@item.descrição</td>
+                   <td>@item.quantidade</td>
+                   <td>@item.valor_unitario</td>
+
+           
                </tr>
            }
        </tbody>
     </table>
+    </br>
+    <div style=" font-weight: bold">
+    </br>
+    @ViewData["Contador"]
+    </br>
+    @ViewData["Resultado"]
+    </div>
+    </br></br>
 
     <p>Total dos pedidos é: @Dados.PedidoAtual.FinalizarPedido()</p>
     
