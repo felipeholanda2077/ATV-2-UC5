@@ -3,21 +3,12 @@ using System.Collections.Generic;
 
 namespace ATIVIDADE_1
 {
-    public class NewBaseType
+    public class Pedido
     {
-        internal void AddPedido() => throw new NotImplementedException();
-    }
-
-    public class Pedido : NewBaseType
-    {
-        private List<ItemPedido> listaItens;
+        private List<ItemPedido> listaItens = new List<ItemPedido> ();
 
 
-        public Pedido()
-        {
-            listaItens = new List<ItemPedido>();
-        }
-
+      
         public void IncluirItem(ItemPedido i)
         {
             listaItens.Add(i);
@@ -34,22 +25,14 @@ namespace ATIVIDADE_1
             return total;
         }
 
-        internal List<ItemPedido> ListarPedidos()
-        {
-            throw new NotImplementedException();
-        }
+       
 
-        public double Total()
+        public List<ItemPedido> ListaPedido()
         {
-            double total = 0;
-            for(int i = 0; i < listaItens.Count; i++)
-            {
-                total += (listaItens[i].valor_unitario * listaItens[i].quantidade);
-            }
-
-            return total;
+            return listaItens;
         }
 
         
     }
 }
+        

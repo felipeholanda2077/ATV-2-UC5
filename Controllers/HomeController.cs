@@ -24,15 +24,15 @@ namespace ATV2_UC5.Controllers
             return View();
         }
         
-        public IActionResult Cadastro()
+        public IActionResult Cadastro(ItemPedido itemForm)
         {
-            Dados.PedidoAtual.AddPedido();
+            Dados.PedidoAtual.IncluirItem(itemForm);
            return View();
         }
 
         public IActionResult Listagem()
         {
-           List<ItemPedido> pedido = Dados.PedidoAtual.ListarPedidos();
+           List<ItemPedido> pedido = Dados.PedidoAtual.ListaPedido();
            return View(pedido);
         }
 
