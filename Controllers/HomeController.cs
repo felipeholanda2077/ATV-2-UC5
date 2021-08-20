@@ -27,6 +27,7 @@ namespace ATV2_UC5.Controllers
         public IActionResult Cadastro(ItemPedido itemForm)
         {
             Dados.PedidoAtual.IncluirItem(itemForm);
+            ModelState.Clear();
            return View();
         }
 

@@ -5,11 +5,11 @@ namespace ATIVIDADE_1
 {
     public class ItemPedido
     {
-        public string descrição;
+        public string descrição{get; set;}
 
-        public double valor_unitario;
+        public double valor_unitario{get; set;}
 
-        public int quantidade;
+        public int quantidade{get; set;}
 
           
     }
